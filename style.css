@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+#header {
+    width: 100%;
+    background-color: #FFD900;
+    padding: 20px;
+}
+
+/*CARD ESQUERDA*/
+
+#principal {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 50vw;
+}
+
+.cardEsq{
+    background-color: #514988;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.cardEsq h1{
+    color: #F3C61F;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.cardEsq h3{
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 20px;
+}
+
+.cardEsq p{
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 60px;
+}
+
+/*CARD DIREITO*/
+.timer {
+    display: grid;
+    grid-auto-flow: column;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #514988;
+}
+
+#titCardDir {
+    color: #E33881;
+    text-align: center;
+    font-size: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#video {
+    text-align: center;
+}
+
+/*CARD FOOTER*/
+#titCardFoot {
+    color: #F3C61F;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+    font-size: 20px;
+    width: 800px;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+/* .cardFoot {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    gap: 10px;
+} */
+
+.cardFoot {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.imgFoot {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+}
+
+.imgCard {
+    width: 25%;
+    padding: 10px;
+}
+
+.imgCard img {
+    max-width: 100%;
+    height: auto;
+}
+
+.botao {
+    width: 50%;
+    padding: 10px;
+    text-align: center;
+}
+
+.botao button {
+    text-align: center;
+    margin-top: 70px;
+    width: 600px;
+    height: 100px;
+    border: 0;
+    border-radius: 20px;
+    background-color: #514988;
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 768px){
+    /*CARDS*/
+    * {
+        overflow: scroll;
+    }
+
+    #principal{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    } 
+
+    video {
+        width: -webkit-fill-available;
+    }
+
+    /*FOOTER*/
+    .cardFoot {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+    #titCardFoot {
+        width: 376px;
+    }
+
+    .botao button {
+        width: 335px;
+    }
+
+    .imgFoot {
+        width: 100%;
+    }
+
+    .imgCard {
+        width: 50%;
+    }
+
+    .botao {
+        width: 100%;
+        margin-top: 10px;
+    }
+ 
+}
